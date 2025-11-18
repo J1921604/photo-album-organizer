@@ -1,0 +1,164 @@
+/* レスポンシブデザイン */
+
+/* タブレット（768px以下） */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  .header h1,
+  .header h2 {
+    font-size: 1.25rem;
+  }
+
+  .header-actions {
+    justify-content: center;
+  }
+
+  .header-left {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .albums-toolbar__actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .albums-toolbar__hint {
+    text-align: center;
+  }
+
+  .main-content {
+    padding: 1rem;
+  }
+
+  .albums-container {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 1rem;
+  }
+
+  .tile-grid {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 0.75rem;
+  }
+
+  .modal-content {
+    max-width: 95%;
+    max-height: 85vh;
+    padding: 1.5rem;
+    gap: 1rem;
+  }
+
+  .modal-image-container {
+    padding: 0.5rem;
+    max-height: calc(85vh - 200px);
+  }
+
+  .fullsize-image {
+    max-height: 75vh;
+  }
+}
+
+/* スマートフォン（480px以下） */
+@media (max-width: 480px) {
+  .header {
+    padding: 1rem;
+  }
+
+  .header h1,
+  .header h2 {
+    font-size: 1.1rem;
+  }
+
+  .btn {
+    padding: 0.6rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .main-content {
+    padding: 0.75rem;
+  }
+
+  .albums-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .tile-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .album-thumbnail {
+    height: 100px;
+  }
+
+  .album-title-text {
+    font-size: 0.9rem;
+  }
+
+  .album-meta-date {
+    font-size: 0.75rem;
+  }
+
+  .album-count {
+    font-size: 0.75rem;
+  }
+
+  .modal-close {
+    width: 36px;
+    height: 36px;
+    font-size: 1.25rem;
+  }
+
+  .fullsize-image {
+    max-height: 65vh;
+  }
+
+  .modal-actions {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .modal-actions .btn {
+    width: 100%;
+    padding: 0.6rem 1rem;
+  }
+}
+
+/* 大画面（1200px以上） */
+@media (min-width: 1200px) {
+  .main-content {
+    max-width: 1400px;
+  }
+
+  .albums-container {
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  }
+
+  .tile-grid {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  }
+}
+
+/* 超小画面（240px以下） */
+@media (max-width: 240px) {
+  .albums-container {
+    grid-template-columns: 1fr;
+  }
+
+  .tile-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .header h1,
+  .header h2 {
+    font-size: 1rem;
+  }
+
+  .btn {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.8rem;
+  }
+}
