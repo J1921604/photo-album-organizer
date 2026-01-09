@@ -1,0 +1,23 @@
+{
+  "name": "photo-album-organizer",
+  "version": "1.0.0",
+  "description": "ローカルストレージ内の写真を日付別に自動グループ化し、ドラッグ&ドロップで再編成できるWebアプリケーション",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "vitest",
+    "test:ui": "vitest --ui"
+  },
+  "dependencies": {
+    "sql.js": "^1.13.0",
+    "terser": "^5.44.1"
+  },
+  "devDependencies": {
+    "@vitest/ui": "^1.0.0",
+    "jsdom": "^27.2.0",
+    "vite": "^5.0.0",
+    "vitest": "^1.0.0"
+  }
+}

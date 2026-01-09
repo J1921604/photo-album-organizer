@@ -1,0 +1,13 @@
+node_modules/
+# dist/ は gh-pages ブランチでのみ使用
+dist/
+build/
+*.local
+.DS_Store
+.env
+.env.*.local
+*.log
+final-test.log
+
+# ドキュメント (mainブランチのdocsフォルダは残す)
+# gh-pagesブランチには含まれない
